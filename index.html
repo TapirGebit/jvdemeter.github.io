@@ -3,68 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JV Demeter - Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>JV i.o. Demeter</title>
     <style>
+        
+        :root {
+        --p1: #edeec9;
+        --p2: #dde7c7;
+        --p3: #bfd8bd;
+        --p4: #98c9a3;
+        --p5: #77bfa3;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            background-color: var(--p4);
+            color: var(--p1);
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
+            padding-left: 20%;
+            font-size: 24px;
             text-align: center;
-            padding: 2rem 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+
         section {
-            margin-bottom: 2rem;
+            padding: 4vw;
+            max-width: 70vw;
+            margin: 0 auto;
         }
-        h1, h2 {
-            color: #333;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
+        
+        .Sidebar {
+            background-color: var(--p2);
+            width: 20%;
+            height: 100vh;
+            gap: 24px;
             position: fixed;
-            width: 100%;
-            bottom: 0;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1; /* Stay on top */
         }
+
+        .Sidebar img {
+            height: 60%;
+            max-width: 60%;
+
+        }
+
+        .HeroImage {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: var(--p5);
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            text-align: center;
+            font-size: 3vw;
+        }
+
+        h2{
+            color: var(--p2);
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 1vh;
+            font-size: 2.5vw;
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to JV Demeter's Homepage</h1>
-        <p>Professional Portfolio and Personal Site</p>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm JV Demeter. This is my personal homepage where I share information about my work, interests, and projects.</p>
+    <div class="Sidebar">
+        <img src="demeter.svg" alt="Demeter" width="400px">
+        <H1>JV i.o. Demeter</H1>
+    </div>
+    <div>
+        <img class="HeroImage" src="groep.jpg" alt="Groep">
+        <section>
+             <h2>
+                Welkom bij JV i.o. Demeter!
+            </h2>
+            <p>
+                We zijn een gezellige studentenvereniging die zich richt op het creëren van een hechte gemeenschap onder studenten. Bij JV i.o. Demeter organiseren we regelmatig leuke evenementen, zoals feesten, sportactiviteiten, en culturele uitjes, om ervoor te zorgen dat onze leden een geweldige tijd hebben en nieuwe vrienden maken. Of je nu op zoek bent naar een plek om te ontspannen na een drukke dag studeren of gewoon wilt genieten van leuke activiteiten met gelijkgestemde mensen, bij ons ben je aan het juiste adres!
+            </p>
         </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here you can find links to my various projects and works. Stay tuned for updates!</p>
+        <section>
+            <h2>
+                Bestuur
+            </h2>
         </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email or social media.</p>
+                <section>
+            <h2>
+                Leden
+            </h2>
         </section>
     </div>
-
-    <footer>
-        <p>&copy; 2026 JV Demeter. All rights reserved.</p>
-    </footer>
-</body>
+</body> 
 </html>
