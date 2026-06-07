@@ -6,6 +6,10 @@
         --ACCENT: #CD7F32;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             background-color: var(--BACKGROUND_DARK);
             color: var(--TEXT_LIGHT);
@@ -26,11 +30,36 @@
         
         .Grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: stretch;
+            justify-items: stretch;
             gap: 20px;
         }
 
+        .Grid > * {
+            width: 100%;
+        }
+
+        .Lid {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            min-width: 0;
+        }
+
+        .Lid .Image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            display: block;
+        }
+
+        .Lid h3 {
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+            font-size: clamp(1.1rem, 2vw, 1.6rem);
+        }
 
         .Sidebar {
             background-color: var(--BACKGROUND_LIGHT);
