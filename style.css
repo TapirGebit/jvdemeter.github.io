@@ -1,0 +1,120 @@
+        :root {
+        --TEXT_PRIMARY: #31572c;
+        --TEXT_LIGHT: #edeec9;
+        --BACKGROUND_LIGHT: #dde7c7;
+        --BACKGROUND_DARK: #97a97c;
+        --ACCENT: #CD7F32;
+        }
+
+        body {
+            background-color: var(--BACKGROUND_DARK);
+            color: var(--TEXT_LIGHT);
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            margin: 0;
+            padding-left: 30%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        section {
+            padding: 3vw;
+            max-width: 70vw;
+            margin: 0 auto 0 auto;
+        }
+        
+        .Grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .Sidebar {
+            background-color: var(--BACKGROUND_LIGHT);
+            width: 30%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1; /* Stay on top */
+            box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.096);
+        }
+
+        .Sidebar img {
+            height: 60%;
+            max-width: 60%;
+
+        }
+
+        .HeroImage {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: var(--TEXT_PRIMARY);
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 20px;
+            text-align: center;
+            font-size: 3vw;
+        }
+
+        h2{
+            color: var(--TEXT_PRIMARY);
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin: 1vh;
+            font-size: 48px;
+        }
+
+        h3 {
+            color: var(--TEXT_PRIMARY);
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin: 1vh;
+            font-size: 36px;
+        }
+
+        .Position {
+            color: var(--ACCENT);
+        }
+        
+        .motto {
+            color: var(--ACCENT);
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin: 1vh;
+            font-size: 2vw;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: var(--ACCENT);
+            width:50%;
+            margin: 0px auto 0px auto;  
+
+        }
+
+        a {
+            color: var(--ACCENT);
+            text-decoration: none;
+        }
+        

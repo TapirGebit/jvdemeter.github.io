@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>JV i.o. Demeter - Hoe jonger hoe beter!</title>
+    <style>
+        
+        :root {
+        --TEXT_PRIMARY: #31572c;
+        --TEXT_LIGHT: #dde7c7;
+        --BACKGROUND_LIGHT: #dde7c7;
+        --BACKGROUND_DARK: #97a97c;
+        --ACCENT: #CD7F32;
+        }
+
+        body {
+            background-color: var(--BACKGROUND_DARK);
+            color: var(--TEXT_LIGHT);
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            margin: 0;
+            padding-left: 30%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        section {
+            padding: 3vw;
+            max-width: 70vw;
+            margin: 0 auto 0 auto;
+        }
+        
+        
+
+        .Sidebar {
+            background-color: var(--BACKGROUND_LIGHT);
+            width: 30%;
+            height: 100vh;
+            gap: 24px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1; /* Stay on top */
+            box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.096);
+        }
+
+        .Sidebar img {
+            height: 60%;
+            max-width: 60%;
+
+        }
+
+        .HeroImage {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: var(--TEXT_PRIMARY);
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            text-align: center;
+            font-size: 3vw;
+        }
+
+        h2{
+            color: var(--TEXT_PRIMARY);
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin: 1vh;
+            font-size: 48px;
+        }
+        
+        .motto {
+            color: var(--ACCENT);
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin: 1vh;
+            font-size: 2vw;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: var(--ACCENT);
+            width:50%;
+            margin: 0px auto 0px auto;  
+
+        }
+
+        a {
+            color: var(--ACCENT);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Sidebar">
+        <img src="demeter.svg" alt="Demeter" width="400px">
+        <H1>JV i.o. Demeter</H1>
+        <p class="motto">“Hoe jonger hoe beter„</p>
+    </div>
+    <div>
+        <img class="HeroImage" src="groep.jpg" alt="Groep">
+        <section>
+             <h2>
+                Welkom bij JV i.o. Demeter!
+            </h2>
+            <p>
+                We zijn een gezellige studentenvereniging die zich richt op het creëren van een hechte gemeenschap onder studenten. Bij JV i.o. Demeter organiseren we regelmatig leuke evenementen, zoals feesten, sportactiviteiten, en culturele uitjes, om ervoor te zorgen dat onze leden een geweldige tijd hebben en nieuwe vrienden maken. Of je nu op zoek bent naar een plek om te ontspannen na een drukke dag studeren of gewoon wilt genieten van leuke activiteiten met gelijkgestemde mensen, bij ons ben je aan het juiste adres!
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h2>
+                Bestuur
+            </h2>
+        </section>
+        <hr>
+        <section>
+            <h2>
+                Leden
+            </h2>
+        </section>
+        <hr>
+        <section>
+            <p>
+                Jaarvereniging i.o. Demeter der <a href='https://demos.nl' target='_blank'>ESV Demos</a>
+            </p>
+        </section>
+    </div>
+</body> 
+</html>
